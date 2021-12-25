@@ -1,0 +1,25 @@
+header{
+    height: 500px;
+    width: 100%;
+    background-color: antiquewhite;
+}
+.slide{
+    height: 300px;
+    width: 100%;
+    background-color: rgb(144, 226, 119);
+}
+.main{
+    height: 800px;
+    width: 100%;
+    background-color: antiquewhite;
+}
+.image{
+    display: flex;
+
+}
+.image > img{
+    width: 200px;
+    height: 300px;
+    margin: 6px;
+    object-fit: cover;
+}
