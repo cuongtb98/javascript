@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Choose File Image</h1>
+    <input type="file" onchange="handleFile(event)">
+    <br>
+    <img src="" alt="">
+    <script>
+        function handleFile(event) {
+            let path = URL.createObjectURL(event.target.files[0]);
+            let image = document.querySelector('img')
+            image.src = path
+        }
+    </script>
+</body>
+
+</html>
